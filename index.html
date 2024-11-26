@@ -1,44 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
+    <title>BENESPA</title>
     <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
 </head>
+<body id="cuerpo">
+    <header class="header">
+        <nav class="header__nav">
+                <img src="./portada/imagenes/header/menu-svgrepo-com (1).svg" alt="" class="header__menu header__img"
+                id="abrir__menu">
+                <nav  class="header__nav__menu" id="menu">
+                    <button class="menu__lista__close"><img src="./portada/imagenes/header/x-lg.svg" alt="" id="cerrar__menu"></button>
+                    <ul class="menu__lista">
+                        
+                        <li class="menu__lista__el">
+                            <a href="#" class="menu__lista__el__link">HOMBRE</a>
+                        </li>
+                        <li class="menu__lista__el">
+                            <a href="#" class="menu__lista__el__link">MUJER</a>
+                        </li>
 
-<body>
-
-    <div class="container">
-        <div class="container__contenido">
-            <div class="container__informaciones">
-                <div class="container__texto">
-                    
-                    <h1></h1>
-                    <p class="texto__parrafo"></p>
+                        <li class="menu__lista__el">
+                            <a href="#" class="menu__lista__el__link" id="nav__sale">ACCESORIOS</a>
+                        </li>
+                        <div class="menu__lista__separador"></div>
+                        <li class="menu__lista__el">
+                            <a href="#" class="menu__lista__el__link" id="menu__lista__el__link__sub">DESCUENTOS</a>
+                        </li>
+                        <li class="menu__lista__el">
+                            <a href="#" class="menu__lista__el__link" id="menu__lista__el__link__sub">CONTACTO</a>
+                        </li>
+                   </ul>
+                   
+                </nav>
+               
+            <a href="index.html" class="header__logo__a">
+                <img src="./portada/imagenes/header/logo-reason-svgrepo-com.svg" alt="LOGO" class="header__logo header__img">
+            </a>
+            <a href="#" class="header__cart__a">
+                <img src="./portada/imagenes/header/cart-shopping-svgrepo-com.svg" alt="" class="header__cart header__img">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="body">
+            <div class="body__concta"> 
+                <button class="body__cta">
+                    HOMBRE
+                </button>
+                <button class="body__cta">
+                    MUJER
+                </button>
+            </div>
+        </section>
+    </main>
+    <section class="others">
+        <div class="others__contain__img">
+            <a href="#">
+                <img src="./portada/imagenes/body/subsection/henry-co-cp-VMJ-mdKs-unsplash.jpg" alt="" class="other__img">
+            </a>
+            <a href="#">
+                <img src="./portada/imagenes/body/subsection/masaaki-komori-9ugEeqflo70-unsplash.jpg" alt="" class="other__img">
+            </a>
+            <a href="#">
+                <img src="./portada/imagenes/body/subsection/mnz-ToLMORRb97Q-unsplash.jpg" alt="" class="other__img">
+            </a>
+        </div>
+    </section>
+    <section class="subbody__mapa">
+        <div class="subbody__mapa__contain">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2146510210227!2d-75.60862432688093!3d1.6245497983603419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2451e28b7d981b%3A0x47e601cd411309ea!2sCentro%20Comercial%20Gran%20Plaza%20Florencia!5e0!3m2!1ses-419!2sco!4v1732639187517!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="subbody__mapa__img"></iframe>
+        </div>
+        <div class="subbody__mapa__content">
+            <h2 class="subbody__mapa__text">¡ A SOLO PASOS DE TI !</h2>
+            <img src="./portada/imagenes/body/subbody/logonegro.svg" alt="" class="subbody__mapa__logo" id="logo__negro">
+            <img src="./portada/imagenes/body/subbody/logoblanco.svg" alt="" class="subbody__mapa__logo" id="logo__blanco">
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer__contacto">
+            <div class="footer__info">
+                <button class="footer__info__btn" id="footer__info__btn">
+                    CONTACTO
+                </button>
+                <button class="footer__infobtnclose" id="footer__close">
+                    <img src="./portada/imagenes/footer/x-lg.svg" alt="" class="footer__infobtnclose__img">
+                </button>
+            </div>
+            <div class="footer__info__text" id="footer__info__text">
+                <a href="#" class="footer__info__text__link">
+                    <img src="./portada/imagenes/footer/whatsappicon.svg" alt="">
+                    <p class="footer__info__text__num">320 3954642</p>
+                </a>
+            </div>
+    
+            <div class="footer__redes">
+                <div class="footer__redes__text">
+                    <p>
+                        SÍGUENOS
+                    </p>
                 </div>
-                <input type="number" min="1" max="10" id="valorUsuario" class="container__input">
-                <div class="chute container__botones">
-                    <button onclick="cantidadJuegos()" id=Inicio class="container__boton">Iniciar</button>
-                    <button     
-                    onclick="verificarIntento()" 
-                    class="container__boton" disabled id="Intentar">Intentar</button>
-                    <button class="container__boton"  onclick="reiniciarJuego()"  id="reiniciar" disabled>Nuevo juego</button>
+                <div class="footer__redes__icons"> 
+                    <a href="#">
+                        <img src="./portada/imagenes/footer/facebook (1).svg" alt="" class="footer__icon">
+                    </a>
+                    <a href="#">
+                        <img src="./portada/imagenes/footer/whatsappicon.svg" alt="" class="footer__icon">
+                    </a>
+                    <a href="#">
+                        <img src="./portada/imagenes/footer/instagram.svg" alt="" class="footer__icon">
+                    </a>
                 </div>
             </div>
-            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
-        </div>
-    </div>
-
-
-
-
-    <script src="app.js" defer></script>
+        </section>
+        
+    </footer>
+    <script src="main.js"></script>
 </body>
-
 </html>
